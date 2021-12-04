@@ -9,11 +9,11 @@ import javax.persistence.Id;
 public class Post {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Integer id;
+    private Long id;
     private String title;
     private String body;
 
-    public Post(Integer id, String title, String body) {
+    public Post(Long id, String title, String body) {
         this.id = id;
         this.title = title;
         this.body = body;
@@ -22,11 +22,11 @@ public class Post {
     public Post() {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
